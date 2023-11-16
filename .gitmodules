@@ -1,6 +1,3 @@
-[submodule "liquidfun_wrapper"]
-	path = external/liquidfun_wrapper
-	url = git@github.com:Samir-N-Ahmad/liquidfun_wrapper.git
 [submodule "external/liquidfun_wrapper"]
 	path = external/liquidfun_wrapper
 	url = git@github.com:Samir-N-Ahmad/liquidfun_wrapper.git
