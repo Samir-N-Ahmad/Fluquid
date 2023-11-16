@@ -1,13 +1,18 @@
- import 'dart:ffi' as ffi;
+ import 'dart:ffi';
 
 
-final class LiquidFunEngine extends ffi.Struct {
+final class LiquidFunEngine extends Struct {
 
-  @ffi.Int()
+  @Int()
   external int id;
 
-  external void draw();
-  external void intialize();
+  external static  LiquidFunEngine instance();
   external void dispose();
-  external void render();
+  external void intialize(Array<Double> a);
+  external void draw();
+
+  external void addCircle( Pointer<Float> radius, Pointer<Float> xPosition, Pointer<Float>  yPosition);
+  external List<List<Double>> render();
+  external String toString();
+  external String a();
 }
